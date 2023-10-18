@@ -1,0 +1,140 @@
+1- file structure:
+
+- public:
+	- index.html
+	- any other public file
+- src: 
+	- assests:
+		- images:
+			- x.png
+			- y.png	
+		- fonts : 
+			- x.xyz
+		- icons: 
+			- y.xyz
+		- any other assests
+	- constants: 
+		- moduleX constants:
+			- x.js
+			- y.js
+	- network:
+		- shared:
+			- x.js
+		- moduleX:
+			- y.js
+	- components:
+		- SharedComponents:
+			- Header.vue
+			- Footer.vue
+			- any other commonly used component
+		- moduleX:
+			- modulex component 1.vue
+			- modulex component 2.vue
+		- moduleY:
+			- moduleY component 1.vue
+			- moduleY component 2.vue
+	- layouts:
+		- sharedLayout:
+			defaultLayout.vue
+	- utils: 
+		- x.js
+		- y.js
+
+	- plugins: 
+		- axios.js
+		- keyCloack.js
+
+	- views:
+		
+		Home.vue
+		profile.vue
+		moduleXViews:
+			- a.vue
+			- b.vue
+	- store:
+		user:
+			- index.js
+			- actions.js
+			- mutations.js
+			- getters.js
+		moduleX:
+			- index.js
+			- actions.js
+			- mutations.js
+			- getters.js
+	- router:
+		index.js
+		routes:
+			- public.js
+			- private.js
+			moduleX:
+				x.js
+				y.js
+	- main.js
+	- App.vue
+	- others..
+- eslint
+- babel
+- readme 
+- etc
+
+------------------------------------------------------------------------------------------------------------------
+
+2- naming convensions : 
+
+	- props : camelCase -- and kebab-case
+	- components: Multi-word component names ( in kebab-case ) -- ( to be discussed )
+	- pages : Multi-word, PascalCase.
+
+------------------------------------------------------------------------------------------------------------------
+
+3- setup:
+
+	- eslint: it'll help in writing proper code and it'll prevent the unneeded imports/unused functions etc..
+	- prettier: it'll help mainting readable code.
+
+------------------------------------------------------------------------------------------------------------------
+
+4- introducing feature toggle : 
+	
+	- will help in achieving the desired approach for the feature appear/disappear.
+
+
+------------------------------------------------------------------------------------------------------------------
+
+5- libraries:
+	
+	1- vue router ( routing ) 
+	2- vuex ( state management )
+	3- introducing tailwind css:
+		will help achieving the desired css through out the repo with minimum css code ( we will discuss it more ).
+	4- any additional library: the size and better alternatives should be taken into considration to avoid installing unnecessary libraries
+
+------------------------------------------------------------------------------------------------------------------
+
+6- plugins:
+	
+	1- keycloack ( some modifications to the already existing configuration to solve some issues).
+	2- axios.
+
+------------------------------------------------------------------------------------------------------------------
+
+7- code writing enhancements:
+
+	- search should be done using query params.
+	- introducing destructuring. 
+	- disable buttons on submitting data to avoid data duplications or recalling APIs with the same data.
+	- excessive amount of API calls on reload ( on refresh some pages call the same API 3 and 4 times) this 	need to be removed to enhance the performance and improve the user experience.
+	- prevent re-writing the same code multiple times also breaking down large components.
+	- In case of writing a complex component/function would be better to write a simple comment explaining.
+	- always use scooped css.
+	- don't use v-if with v-for on the same element.
+	- always use key with v-for.
+	- always use computed methods for computation based functions. 
+
+------------------------------------------------------------------------------------------------------------------
+
+8- using Vue3 insead of Vue2 
+
+
+	
